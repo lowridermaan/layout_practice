@@ -392,15 +392,17 @@
               class="form-input subscribe-form__input form-input--dark"
               placeholder="Имя"
               name="name"
+              required
             />
             <input
               type="email"
               class="form-input subscribe-form__input form-input--dark"
               placeholder="E-mail"
               name="email"
+              required
             />
             <button class="btn btn-reset btn--fill subscribe-form__btn">
-              Подписаться
+              <span class="subscribe-form__text">Подписаться</span>
             </button>
             <label class="checkbox">
               <input type="checkbox" class="checkbox__input" name="checkbox" />
@@ -415,15 +417,15 @@
         <div class="container">
           <div class="become-author__content">
             <div class="become-author__text">
-              <h2 class="section__title"></h2>
-              <p class="become-author__descr">
+              <h2 class="section-title text-reset">Стать автором</h2>
+              <p class="become-author__descr text-reset">
                 <strong
                   >Если ты&nbsp;художник или стремишься
                   им&nbsp;стать&nbsp;&mdash; добро пожаловать
                   к&nbsp;нам!</strong
                 >
               </p>
-              <p class="become-author__descr">
+              <p class="become-author__descr text-reset">
                 Отправь нам от&nbsp;трёх до&nbsp;пяти своих работ и&nbsp;напиши
                 свой ник в&nbsp;телеграме. Если наши кураторы решат, что нам
                 по&nbsp;пути, то&nbsp;мы&nbsp;обязательно свяжемся с&nbsp;тобой
@@ -437,7 +439,7 @@
               />
             </div>
             <div class="become-author__form">
-              <label class="file">
+              <label class="file form-input">
                 <input type="file" class="file__input" accept="image/*" />
                 <span class="file__content"
                   >Прикрепить работы (.jpeg&nbsp;/ .png)</span
@@ -445,12 +447,12 @@
               </label>
               <input
                 type="text"
-                class="form-input become-author__input form-input--light"
+                class="form-input become-author__input form-input form-input--light"
                 placeholder="@telegram_nickname"
                 name="telegramNick"
               />
               <button class="btn btn-reset btn--fil become-author__btn">
-                Отправить
+                <span class="become-author-btn__text">Отправить</span>
               </button>
             </div>
           </div>

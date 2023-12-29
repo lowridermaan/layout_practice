@@ -434,7 +434,9 @@ body {
   font-weight: 700;
 }
 
-.auction-bet-section__btn {
+.auction-bet-section__btn,
+.subscribe-form__btn,
+.become-author__btn {
   position: relative;
   min-width: 296px;
   padding: 25px 54px;
@@ -446,12 +448,16 @@ body {
   background: var(--color-gradient);
 }
 
-.auction-btn__text {
+.auction-btn__text,
+.subscribe-form__text,
+.become-author-btn__text {
   position: relative;
   z-index: 5;
 }
 
-.auction-bet-section__btn::before {
+.auction-bet-section__btn::before,
+.subscribe-form__btn::before,
+.become-author__btn::before {
   position: absolute;
   content: "";
   inset: 0;
@@ -462,11 +468,17 @@ body {
 }
 
 .auction-bet-section__btn:focus::before,
-.auction-bet-section__btn:hover::before {
+.auction-bet-section__btn:hover::before,
+.subscribe-form__btn:focus::before,
+.subscribe-form__btn:hover::before,
+.become-author__btn:focus::before,
+.become-author__btn:hover::before {
   opacity: 0;
 }
 
-.auction-bet-section__btn:active::before {
+.auction-bet-section__btn:active::before,
+.subscribe-form__btn:active::before,
+.become-author__btn:active::before {
   opacity: 1;
   background-color: var(--color-primary-active);
 }
@@ -653,7 +665,7 @@ body {
 
 .subscribe__container {
   background: url(/img/subscribe-bg.png) center right 13px / contain no-repeat;
-  padding: 31px 12px 31px 12px;
+  padding: 31px 12px 29px 12px;
 }
 
 .subscribe__title {
@@ -691,14 +703,6 @@ body {
   color: var(--color-gray-light);
 }
 
-.subscribe-form__btn {
-  padding: 25px 74px;
-  min-width: 296px;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: normal;
-}
-
 .checkbox {
   display: inline-flex;
   align-items: center;
@@ -708,10 +712,11 @@ body {
 
 .checkbox__input {
   position: absolute;
-  display: none;
+  opacity: 0;
 }
 
 .checkbox__text {
+  border: 1px solid transparent;
   padding-left: 21px;
   font-size: 12px;
   font-weight: 700;
@@ -720,7 +725,8 @@ body {
 
 .checkbox__text::before {
   position: absolute;
-  left: 0;
+  left: -1px;
+  top: 0px;
   content: "";
   border: 1px solid var(--color-light);
   width: 14px;
@@ -729,7 +735,8 @@ body {
 
 .checkbox__text::after {
   position: absolute;
-  left: 0;
+  left: -1px;
+  top: 0px;
   content: "";
   width: 14px;
   height: 14px;
@@ -740,4 +747,43 @@ body {
 
 .checkbox__input:checked + .checkbox__text::after {
   opacity: 1;
+}
+
+.checkbox__input:focus + .checkbox__text {
+  outline: 1px solid var(--color-light);
+  outline-offset: 2px;
+}
+
+/* become-author */
+
+.become-author {
+  padding-top: 96px;
+  padding-bottom: 84px;
+}
+
+.become-author__content {
+  display: flex;
+  gap: 32px;
+}
+
+.become-author__text,
+.become-author__form {
+  width: 50%;
+}
+
+.become-author__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px 0;
+}
+
+.form-input--light {
+  background-color: var(--color-gray-light);
+}
+
+.file {
+  background-color: var(--color-gray-light);
+  padding: 30px;
+  border-radius: 40px;
 }
