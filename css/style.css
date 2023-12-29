@@ -75,7 +75,6 @@ body {
 .title--white {
   font-family: "Russo One", sans-serif;
   color: var(--color-light);
-  font-weight: normal;
   line-height: normal;
 }
 
@@ -115,6 +114,7 @@ body {
 .text-reset {
   margin: 0;
   padding: 0;
+  word-wrap: break-word;
 }
 
 .container {
@@ -643,4 +643,101 @@ body {
 .swiper-pagination-bullet:active {
   background-color: var(--color-red);
   border-color: var(--color-red);
+}
+
+/* subscribe */
+
+.subscribe {
+  background-color: var(--color-red);
+}
+
+.subscribe__container {
+  background: url(/img/subscribe-bg.png) center right 13px / contain no-repeat;
+  padding: 31px 12px 31px 12px;
+}
+
+.subscribe__title {
+  margin-bottom: 32px;
+}
+
+.subscribe-form {
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px 0;
+}
+
+.form-input--dark {
+  background-color: var(--color-dark);
+}
+
+.form-input {
+  width: 100%;
+  padding: 25px 32px;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.subscribe-form__input {
+  color: var(--color-light);
+}
+
+.subscribe-form__input::placeholder {
+  color: var(--color-gray-light);
+}
+
+.subscribe-form__btn {
+  padding: 25px 74px;
+  min-width: 296px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  user-select: none;
+}
+
+.checkbox__input {
+  position: absolute;
+  display: none;
+}
+
+.checkbox__text {
+  padding-left: 21px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-light);
+}
+
+.checkbox__text::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  border: 1px solid var(--color-light);
+  width: 14px;
+  height: 14px;
+}
+
+.checkbox__text::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: url(/img/checkbox.svg) center / 80% no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.checkbox__input:checked + .checkbox__text::after {
+  opacity: 1;
 }
