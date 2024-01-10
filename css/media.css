@@ -1,0 +1,156 @@
+@media (max-width: 1440px) {
+  .hero {
+    background-position: top right -509px;
+  }
+
+  .new__stickers {
+    justify-content: center;
+  }
+
+  .auction-bet-section__props {
+    flex-wrap: wrap;
+    gap: 32px 32px;
+  }
+
+  .subscribe__container {
+    background: url(/img/subscribe-bg-tablet.png) center right 13px / contain
+      no-repeat;
+  }
+
+  .auction-bet-section__sticker {
+    align-self: start;
+  }
+}
+
+@media (max-width: 1320px) {
+  .auction__item:nth-last-child(-n + 2) {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 27px;
+  }
+
+  .hero {
+    background: url(/img/stickers_hero-tablet.png) top right -8px / contain no-repeat,
+      var(--color-dark);
+  }
+
+  .auction-bet-section {
+    padding: 88px 0 89px 0;
+  }
+
+  .top__item {
+    max-width: 460px;
+  }
+
+  .new__stickers {
+    gap: 0 22px;
+    margin-bottom: 55px;
+  }
+
+  .subscribe__container {
+    padding: 30px 27px 31px 27px;
+    background: url(/img/subscribe-bg-tablet.png) center right 28px / contain
+      no-repeat;
+  }
+
+  .become-author {
+    padding: 90px 0 91px 0;
+  }
+
+  .become-author__content {
+    flex-direction: column;
+  }
+
+  .become-author__text {
+    width: 788px;
+  }
+
+  .become-author__subtitle {
+    padding-right: 0;
+  }
+
+  .become-author__descr {
+    margin-bottom: 30px;
+  }
+
+  .become-author__decr {
+    display: none;
+  }
+
+  .become-author__content {
+    gap: 0;
+  }
+
+  .become-author__form {
+    padding-top: 0;
+    padding-left: 327px;
+    align-self: end;
+    width: 100%;
+    background: url(/img/become-decr-tablet.png) left center / 296px 547px
+      no-repeat;
+  }
+
+  .top-info__container {
+    background-position: right 26px center;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero__title {
+    font-size: 50px;
+  }
+
+  .hero__buttons {
+    align-items: start;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .auction-bet-section__content {
+    justify-content: center;
+  }
+
+  .auction-bet-section__info {
+    width: calc(100% / 2);
+  }
+
+  .auction-timer {
+    background-image: none;
+    width: 296px;
+  }
+
+  .become-author__text {
+    width: 100%;
+  }
+
+  .file__content {
+    text-align: center;
+  }
+
+  .top__list {
+    justify-content: center;
+  }
+
+  .top__item {
+    min-width: 610px;
+  }
+
+  .top-info__container {
+    background-size: 297px 104px;
+  }
+
+  .subscribe__container {
+    background-position: bottom -133px right -112px;
+    background-size: 439px 352px;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 375px) {
+}
