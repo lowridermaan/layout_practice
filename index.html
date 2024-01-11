@@ -23,11 +23,15 @@
     <header class="header">
       <div class="header__container container">
         <a class="header__logo">
-          <img
+          <picture>
+            <source srcset="/img/logo-mobile.svg"  media="(max-width:576px)">
+            <img
             class="logo__img"
             src="/img/logo.svg"
             alt="логотип компании AURA"
           />
+          </picture>
+
         </a>
         <nav class="header__menu">
           <ul class="menu__list list-reset">
@@ -43,6 +47,11 @@
           </ul>
         </nav>
         <button class="btn header__btn btn-reset">Кошелёк</button>
+        <svg class="wallet-ico" http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <g clip-path="url(#clip0_27_276)">
+            <path d="M31.5 27V31.5H4.5V4.5H31.5V9H15V27H31.5ZM18 24H33V12H18V24ZM24 20.25C22.755 20.25 21.75 19.245 21.75 18C21.75 16.755 22.755 15.75 24 15.75C25.245 15.75 26.25 16.755 26.25 18C26.25 19.245 25.245 20.25 24 20.25Z" fill="#07060B"/>
+          </g>
+        </svg>
       </div>
     </header>
     <main>
@@ -351,6 +360,134 @@
               </article>
             </li>
           </ul>
+          <div class="new__slider new__slider-auction">
+            <div class="swiper-wrapper swiper-auction">
+              <div class="swiper-slide auction-card-slide">
+                <article class="auction-card">
+                  <div class="auction-card__img">
+                    <img
+                      class="auction-card__sticker"
+                      src="/img/auction-sticker-1.png"
+                      alt="Изображение стикера Alien (green) e_e"
+                    />
+                  </div>
+                  <div class="auction-card__info">
+                    <div class="auction-owner auction-card__owner">
+                      <img
+                        src="/img/user-avatar-1.png"
+                        alt="аватар продавца Frank.Nagval"
+                        class="auction-owner__avatar"
+                      />
+                      <span class="auction-owner__nikname">Frank.Nagval</span>
+                    </div>
+                    <h3 class="auction-card__title text-reset">
+                      <a href="#" class="auction-card__link"
+                        >Alien (green) e_e</a
+                      >
+                    </h3>
+                    <span class="auction-card__price">0.02 ETH</span>
+                    <span class="auction-card__timer"
+                      >03 часа 25 мин 23 сек</span
+                    >
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide auction-card-slide">
+                <article class="auction-card">
+                  <div class="auction-card__img">
+                    <img
+                      class="auction-card__sticker"
+                      src="/img/auction-sticker-2.png"
+                      alt="Изображение стикера CoBRRRa"
+                    />
+                  </div>
+                  <div class="auction-card__info">
+                    <div class="auction-owner auction-card__owner">
+                      <img
+                        src="/img/user-avatar-2.png"
+                        alt="аватар продавца CPH_777"
+                        class="auction-owner__avatar"
+                      />
+                      <span class="auction-owner__nikname">CPH_777</span>
+                    </div>
+                    <h3 class="auction-card__title text-reset">
+                      <a href="#" class="auction-card__link">CoBRRRa</a>
+                    </h3>
+                    <span class="auction-card__price">0.5 ETH</span>
+                    <span class="auction-card__timer">15 мин 03 сек </span>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide auction-card-slide">
+                <article class="auction-card">
+                  <div class="auction-card__img">
+                    <img
+                      class="auction-card__sticker"
+                      src="/img/auction-sticker-5.png"
+                      alt="Изображение стикера Baby Yoda 1"
+                    />
+                  </div>
+                  <div class="auction-card__info">
+                    <div class="auction-owner auction-card__owner">
+                      <img
+                        src="/img/user-avatar-5.png"
+                        alt="аватар продавца Peppppe22"
+                        class="auction-owner__avatar"
+                      />
+                      <span class="auction-owner__nikname">Peppppe22</span>
+                    </div>
+                    <h3 class="auction-card__title text-reset">
+                      <a href="#" class="auction-card__link">Baby Yoda 1</a>
+                    </h3>
+                    <span class="auction-card__price">0.2 ETH</span>
+                    <span class="auction-card__timer"
+                      >01 час 28 мин 11 сек</span
+                    >
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide auction-card-slide">
+                <article class="auction-card">
+                  <div class="auction-card__img">
+                    <img
+                      class="auction-card__sticker"
+                      src="/img/auction-sticker-3.png"
+                      alt="Изображение стикера Diamonds (4)"
+                    />
+                  </div>
+                  <div class="auction-card__info">
+                    <div class="auction-owner auction-card__owner">
+                      <img
+                        src="/img/user-avatar-3.png"
+                        alt="аватар продавца sUpah_kiLLah"
+                        class="auction-owner__avatar"
+                      />
+                      <span class="auction-owner__nikname">sUpah_kiLLah</span>
+                    </div>
+                    <h3 class="auction-card__title text-reset">
+                      <a href="#" class="auction-card__link">Diamonds (4)</a>
+                    </h3>
+                    <span class="auction-card__price">0.008 ETH</span>
+                    <span class="auction-card__timer"
+                      >23 часа 05 мин 08 сек</span
+                    >
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div
+              class="new__pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+            >
+              <span
+                class="swiper-pagination-bullet auction-swiper-pagination-bullet swiper-pagination-bullet-active"
+                tabindex="0"
+                aria-current="true"
+              ></span
+              ><span class="swiper-pagination-bullet" tabindex="0"></span
+              ><span class="swiper-pagination-bullet" tabindex="0"></span
+              ><span class="swiper-pagination-bullet" tabindex="0"></span>
+            </div>
+          </div>
           <div class="btn-center">
             <button class="btn btn-reset auction__btn btn--stroke">
               Все аукционы
@@ -364,7 +501,7 @@
             Новые стикеры
           </h2>
           <div class="new__slider">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper swiper-wrapper-new">
               <div class="swiper-slide new__stickers">
                 <picture>
                   <source
@@ -527,10 +664,13 @@
             <li class="top__item">
               <article class="top-product">
                 <div class="top-product__image">
-                  <img
-                    src="img/top-1.png"
-                    alt="Изображение стикера Baby Joda"
-                  />
+                  <picture>
+                    <source srcset="img/top-1-mobile.png" media="(max-width:576px)"/>
+                    <img
+                      src="img/top-1.png"
+                      alt="Изображение стикера Baby Joda"
+                    />
+                  </picture>
                 </div>
                 <div class="top-product__info">
                   <div class="auction-owner top-product__owner">
@@ -552,10 +692,10 @@
             <li class="top__item">
               <article class="top-product">
                 <div class="top-product__image">
-                  <img
-                    src="img/top-2.png"
-                    alt="Изображение стикера Baby Joda"
-                  />
+                  <picture>
+                    <source srcset="img/top-2-mobile.png" media="(max-width:576px)" />
+                    <img src="img/top-2.png" alt="Изображение стикера Y.EEE" />
+                  </picture>
                 </div>
                 <div class="top-product__info">
                   <div class="auction-owner top-product__owner">
@@ -577,10 +717,13 @@
             <li class="top__item">
               <article class="top-product">
                 <div class="top-product__image">
-                  <img
-                    src="img/top-3.png"
-                    alt="Изображение стикера Baby Joda"
-                  />
+                  <picture>
+                    <source srcset="img/top-3-mobile.png"  media="(max-width:576px)"/>
+                    <img
+                      src="img/top-3.png"
+                      alt="Изображение стикера Baby Joda"
+                    />
+                  </picture>
                 </div>
                 <div class="top-product__info">
                   <div class="auction-owner top-product__owner">
@@ -602,10 +745,13 @@
             <li class="top__item">
               <article class="top-product">
                 <div class="top-product__image">
-                  <img
-                    src="img/top-4.png"
-                    alt="Изображение стикера Baby Joda"
-                  />
+                  <picture>
+                    <source srcset="img/top-4-mobile.png" media="(max-width:576px)" />
+                    <img
+                      src="img/top-4.png"
+                      alt="Изображение стикера Baby Joda"
+                    />
+                  </picture>
                 </div>
                 <div class="top-product__info">
                   <div class="auction-owner top-product__owner">
@@ -627,10 +773,13 @@
             <li class="top__item">
               <article class="top-product">
                 <div class="top-product__image">
-                  <img
-                    src="img/top-5.png"
-                    alt="Изображение стикера Baby Joda"
-                  />
+                  <picture>
+                    <source srcset="img/top-5-mobile.png" media="(max-width:576px)"/>
+                    <img
+                      src="img/top-5.png"
+                      alt="Изображение стикера Baby Joda"
+                    />
+                  </picture>
                 </div>
                 <div class="top-product__info">
                   <div class="auction-owner top-product__owner">
@@ -652,10 +801,13 @@
             <li class="top__item">
               <article class="top-product">
                 <div class="top-product__image">
-                  <img
-                    src="img/top-6.png"
-                    alt="Изображение стикера Baby Joda"
-                  />
+                  <picture>
+                    <source srcset="img/top-6-mobile.png" media="(max-width:576px)"/>
+                    <img
+                      src="img/top-6.png"
+                      alt="Изображение стикера Baby Joda"
+                    />
+                  </picture>
                 </div>
                 <div class="top-product__info">
                   <div class="auction-owner top-product__owner">
@@ -694,11 +846,14 @@
       <div class="container">
         <div class="footer-top">
           <a class="footer-top__logo">
-            <img
+            <picture>
+              <source srcset="/img/logo-mobile.svg"  media="(max-width:576px)">
+              <img
               class="footer-top__img"
               src="/img/logo.svg"
               alt="логотип компании AURA"
             />
+            </picture>
           </a>
           <ul class="footer-top__list list-reset">
             <li class="footer-top__item">

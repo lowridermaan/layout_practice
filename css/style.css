@@ -54,7 +54,7 @@ a {
 }
 
 body {
-  min-width: 378px;
+  min-width: 320px;
   font-family: "Muller", sans-serif;
   font-size: 20px;
   color: var(--color-dark);
@@ -295,7 +295,7 @@ body {
 /* auction-bet */
 
 .auction-bet-section {
-  padding: 90px 0;
+  padding: 87px 0;
 }
 
 .auction-bet-section-title {
@@ -489,7 +489,7 @@ body {
 /* AUCTION */
 
 .auction {
-  padding-bottom: 91px;
+  padding-bottom: 90px;
 }
 
 .auction__title {
@@ -562,6 +562,10 @@ body {
   font-size: 16px;
   font-weight: 700;
   color: var(--color-gray-middle);
+}
+
+.new__slider-auction {
+  display: none;
 }
 
 .btn-center {
@@ -834,6 +838,7 @@ body {
 }
 
 .file__input {
+  max-width: 10px;
   position: absolute;
   opacity: 0;
   appearance: none;
@@ -860,7 +865,7 @@ body {
   position: absolute;
   content: "";
   left: 50%;
-  top: 50px;
+  top: 50%;
   width: 6px;
   height: 40px;
   transform: translate(-50%, -50%);
@@ -872,7 +877,7 @@ body {
   position: absolute;
   content: "";
   left: 50%;
-  top: 50px;
+  top: 50%;
   width: 40px;
   height: 6px;
   transform: translate(-50%, -50%);
@@ -1058,4 +1063,8 @@ body {
   font-size: 12px;
   font-weight: 400;
   color: var(--color-light);
+}
+
+.wallet-ico {
+  display: none;
 }
